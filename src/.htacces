@@ -1,0 +1,14 @@
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^dapp\.africa$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.dapp\.africa$
+RewriteRule ^(.*)$ "https\:\/\/dapp\.africa\/$1" [R=301,L]
+
+RewriteCond %{REQUEST_URI} !^/index\.html$
+RewriteRule . /index.html [L]
+
+#Rewrite conditions that force https from http
+#Allows perma-links on every request the server with server the inde.html page 
+#allowing you to handle routing from angular to show relevant content on whatever url
