@@ -12,3 +12,4 @@ RewriteRule . /index.html [L]
 #Rewrite conditions that force https from http
 #Allows perma-links on every request the server with server the inde.html page 
 #allowing you to handle routing from angular to show relevant content on whatever url
+# https://serverfault.com/questions/188373/apache-2-2-rewrite-force-all-requests-to-index-html
