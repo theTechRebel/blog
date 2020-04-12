@@ -1,15 +1,21 @@
-
 RewriteEngine on
+
+#Rewrite conditions that force https from http
 RewriteCond %{HTTPS} off
 RewriteCond %{HTTP:X-Forwarded-SSL} !on
 RewriteCond %{HTTP_HOST} ^dapp\.africa$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.dapp\.africa$
 RewriteRule ^(.*)$ "https\:\/\/dapp\.africa\/$1" [R=301,L]
 
-RewriteCond %{REQUEST_URI} !^/index\.html$
-RewriteRule . /index.html [L]
-
-#Rewrite conditions that force https from http
 #Allows perma-links on every request the server with server the inde.html page 
 #allowing you to handle routing from angular to show relevant content on whatever url
 # https://serverfault.com/questions/188373/apache-2-2-rewrite-force-all-requests-to-index-html
+RewriteCond %{REQUEST_URI} !^/index\.html$
+
+#serve css & images as is otherwise the site will crash
+RewriteCond %{REQUEST_FILENAME} !\.(css|js|png|jpg)$
+
+#server index.html all on requests
+RewriteRule . /index.html [L]
+
+
