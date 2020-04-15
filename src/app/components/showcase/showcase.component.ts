@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProfileService } from 'src/app/services/profile.service';
+import { IDapp } from 'src/app/models/profile-models';
 
 @Component({
   selector: 'app-showcase',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowcaseComponent implements OnInit {
 
-  constructor() { }
+  dapps: IDapp[] = [];
+  constructor(private profileService: ProfileService) { }
 
   ngOnInit(): void {
+    this.profileService.getAllDapps().subscribe(data => {
+      this.dapps = data;
+    });
   }
-
 }

@@ -13,6 +13,8 @@ import { RelatedComponent } from './components/related/related.component';
 import { ShowcaseComponent } from './components/showcase/showcase.component';
 import { LineItemComponent } from './components/line-item/line-item.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { ProfileService } from './services/profile.service';
+import { HttpClientModule } from '@angular/common/http'; 
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { ProfileComponent } from './components/profile/profile.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
