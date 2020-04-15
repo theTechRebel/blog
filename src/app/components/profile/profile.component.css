@@ -1,0 +1,15 @@
+.col-md-3 .col-md-12{
+    margin-bottom: 10px;
+}
+
+.col-md-9 .col-auto{
+    text-align: center;
+    top: 50%;
+}
+
+.col-auto .row{
+    margin-bottom: 2px;
+}
+.social-icons .i{
+    margin-right: 10px;
+}

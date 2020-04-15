@@ -12,6 +12,7 @@ import { PostComponent } from './components/post/post.component';
 import { RelatedComponent } from './components/related/related.component';
 import { ShowcaseComponent } from './components/showcase/showcase.component';
 import { LineItemComponent } from './components/line-item/line-item.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { LineItemComponent } from './components/line-item/line-item.component';
     RelatedComponent,
     ShowcaseComponent,
     LineItemComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,

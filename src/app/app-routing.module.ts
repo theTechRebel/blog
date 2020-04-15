@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { AuthorComponent } from './components/author/author.component';
 import { PostComponent } from './components/post/post.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'post',
     component: PostComponent
+  },
+  {
+    path: 'dapp',
+    component: ProfileComponent
   },
   {
     path: '**',

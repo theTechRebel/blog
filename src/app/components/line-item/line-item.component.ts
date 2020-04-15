@@ -12,4 +12,6 @@ export class LineItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  changeCategory() {
+  }
 }

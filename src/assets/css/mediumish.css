@@ -441,3 +441,14 @@ ul.tags li a:hover {
 	border-radius:50%;
 	font-size:12px;
 }
+
+html {  height:100%;min-height:100% !important;margin:0;padding:0;   /** see height, min-height values here. **/ }
+body{  overflow:auto;padding:0;margin:0;height:100%;min-height:100% !important;   /** see height, min-height values here. **/ }
+.main { 
+  position:relative;min-height:100%; height:auto;  
+  /** see position, height, min-height values here. Height auto to make sure 
+      that main div resizes if window size changes after initial rendering **/ 
+}
+.header { display:block;height:50px;position:relative;background:yellow;text-align:center;padding:10px; }
+.content { padding:20px;padding-top: 80px;margin-bottom:50px; /** bottom margin here to make sure that footer does not cover the content area **/  }
+.footer { top: 100%;display:block;position:absolute;bottom:0;left:0;width:100%;height:auto;text-align:center;padding:10px;  /** see position, top, left, and width properties here. **/  }

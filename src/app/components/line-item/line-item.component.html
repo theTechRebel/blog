@@ -6,8 +6,8 @@
         </div>
         <div class="card-rows listfeaturedtag">
             <div class="row">
-                <a href="#" class="col-md-1 badge badge-light">Ethereum</a>
-                <a href="#" class="col-md-1 badge badge-light">Binance Chain</a>
+                <span class="col-md-1 badge badge-pill badge-dark" (click)="changeCategory()">Ethereum</span>
+                <span class="col-md-1 badge badge-pill badge-light" (click)="changeCategory()">Binance Chain</span>
             </div>
             <!-- begin line item -->
             <div class="card-header">
@@ -22,7 +22,7 @@
             </div>
             <!-- end line item -->
             <!-- begin line item -->
-            <a [routerLink]="['/post']">
+            <a [routerLink]="['/dapp']">
             <div class="card">
                 <div class="row">
                     <div class="col-md-2">
@@ -46,54 +46,6 @@
                 </div>
             </div>
             </a>
-            <!-- end line item -->
-            <!-- begin line item -->
-            <div class="card">
-                <div class="row">
-                    <div class="col-md-2">
-                        <div class="row">
-                        <div class="col-md-6 icon">
-                        <a [routerLink]="['/post']">
-                            <div class="thumbnail" style="background-image:url(assets/img/demopic/1.jpg);">
-                            </div>
-                        </a>
-                        </div>
-                        <div class="col-md-6 name drop">
-                            NGNT.WIN
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 drop">Exchange</div>
-                    <div class="col-md-2 drop">Blockchain</div>
-                    <div class="col-md-2 drop">24 hour Users</div>
-                    <div class="col-md-2 drop">24 hour Transactions</div>
-                    <div class="col-md-2 drop">24 hour Volume</div>
-                </div>
-            </div>
-            <!-- end line item -->
-            <!-- begin line item -->
-            <div class="card">
-                <div class="row">
-                    <div class="col-md-2">
-                        <div class="row">
-                        <div class="col-md-6 icon">
-                        <a [routerLink]="['/post']">
-                            <div class="thumbnail" style="background-image:url(assets/img/demopic/1.jpg);">
-                            </div>
-                        </a>
-                        </div>
-                        <div class="col-md-6 name drop">
-                            NGNT.WIN
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 drop">Exchange</div>
-                    <div class="col-md-2 drop">Blockchain</div>
-                    <div class="col-md-2 drop">24 hour Users</div>
-                    <div class="col-md-2 drop">24 hour Transactions</div>
-                    <div class="col-md-2 drop">24 hour Volume</div>
-                </div>
-            </div>
             <!-- end line item -->
     
         </div>
