@@ -1,0 +1,52 @@
+.drop{
+    margin-top: 15px;
+}
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+a {
+    color: #000;
+}
+@media (min-width:576px) {
+	.card-rows.listfeaturedtag {
+		-webkit-column-count:1;
+		-moz-column-count:1;
+        column-count:1;
+        text-align: center;
+	}	
+}
+.listfeaturedtag .icon {
+	height: 50px;
+    width: 50px;
+    padding: 0px;
+    margin-left: 20px;
+    margin-top: 4px;
+}
+.listfeaturedtag .name {
+    padding: 0px;
+    position: absolute;
+    left: 70px;
+}
+.listfeaturedtag .card {
+	border:1px solid rgba(0,0,0,.1);
+	border-radius:2px;
+	height:60px;
+	padding-left:0;
+	margin-bottom:15px;
+}
+.listfeaturedtag .card-header{
+    background-color: inherit;
+}
+.listfeaturedtag .thumbnail {
+	background-size:cover;
+    height:100%;
+    width: 50px;
+	display:block;
+	background-position:38% 22% !important;
+	background-origin:border-box!important;
+	border-top-left-radius:2px;
+}
+.listfeaturedtag .badge{
+    margin-left: 5px;
+}
