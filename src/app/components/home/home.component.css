@@ -1,0 +1,11 @@
+@media (min-width:456px) {
+	.mainheading{
+		padding-top: 150px;
+	}
+}
+
+@media (max-width:455px) {
+	.mainheading{
+		padding-top: 10;
+	}
+}
